@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.SearchActivity">
+
+    <LinearLayout
+        android:id="@+id/button_choose_language"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="28dp"
+
+        android:background="@drawable/roundedbutton"
+
+        android:fontFamily="@font/roboto_condensed_light"
+        android:onClick="selectLang"
+        android:padding="9dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck">
+
+        <ImageView
+            android:id="@+id/flag_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/eng_icon" />
+
+        <TextView
+            android:id="@+id/choice_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_condensed_light"
+            android:text="@string/english"
+            android:textSize="18sp"
+            tools:ignore="TextContrastCheck"
+            tools:text="ENGLISH" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit_text_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:backgroundTint="#00FFFFFF"
+        android:ems="10"
+        android:hint="@string/type_a_word"
+        android:inputType="textLongMessage|textPersonName"
+        android:textAlignment="center"
+        android:textColorHint="#80052D39"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_choose_language" />
+
+    <Button
+        android:id="@+id/button_search"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="312dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/roundedbutton2"
+        android:padding="16dp"
+        android:text="@string/search"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_word"
+        tools:ignore="TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

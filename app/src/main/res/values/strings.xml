@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">DictionMaster</string>
+    <string name="by_you_name">João Victor</string>
+    <string name="english">English</string>
+    <string name="french">French</string>
+    <string name="spanish">Spanish</string>
+    <string name="type_a_word">Type a word...</string>
+    <string name="search">SEARCH</string>
 </resources>
